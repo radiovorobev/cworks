@@ -1,0 +1,50 @@
+.footer {
+  padding: 120px 160px 60px;
+
+  @media only screen and (max-width: 1439px) {
+    padding: 90px 60px 0;
+  }
+
+  @media only screen and (max-width: 767px) {
+    padding: 130px 20px 0;
+  }
+
+  &__line {
+    border-top: 2px solid #151515;
+    margin-block-end: 60px;
+
+    @media only screen and (max-width: 767px) {
+      margin-block-end: 30px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-start: 18px;
+    
+    @media only screen and (max-width: 1439px) {
+      flex-flow: column;
+      align-items: flex-start;
+    }
+
+    @media only screen and (max-width: 767px) {
+      margin-block-start: 10px;
+    }
+  }
+
+  &__text {
+    @include base-font(12px, 400, 1.5);
+    color: $grey;
+
+    @media only screen and (max-width: 1439px) {
+      margin-block-end: 60px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      margin-block-end: 40px;
+    }
+  }
+}

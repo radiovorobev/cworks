@@ -1,0 +1,46 @@
+.header {
+  @include section-paddings;
+  max-width: 1440px;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: 1439px) {
+    padding-block-end: 32px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    padding-block-end: 20px;
+    padding: 24px 20px 20px;
+  }
+
+  &__title {
+    @include base-font(112px, 400, 1);
+    color: $white;
+    margin: 60px 0 230px;
+
+    @media only screen and (max-width: 1439px) {
+      @include base-font(70px, 400, 1.29);
+      margin: 70px 0 470px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      @include base-font(50px, 400, 1.2);
+      margin: 60px 0 260px;
+    }
+
+    &_small {
+      display: block;
+      @include base-font(80px, 400, 0.87);
+      margin-block-start: 20px;
+
+      @media only screen and (max-width: 1439px) {
+        @include base-font(50px, 400, 1.2);
+        margin: 0;
+      }
+
+      @media only screen and (max-width: 767px) {
+        @include base-font(30px, 400, 1.27);
+        margin-block-start: 10px;
+      }
+    }
+  }
+}

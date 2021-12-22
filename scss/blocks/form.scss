@@ -1,0 +1,76 @@
+.form {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__input {
+    width: 348px;
+    height: 50px;
+    background-color: rgba(142, 142, 152, 0.2);
+    border: none;
+    border-radius: 8px 0 0 8px;
+    padding: 13px 16px;
+    color: $white;
+    box-sizing: border-box;
+    @include base-font(14px, 400, 1.71);
+    letter-spacing: 0.375px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(142, 142, 152, 0.3);
+    }
+
+    &:valid {
+      background-color: rgba(142, 142, 152, 0.3);
+    }
+
+    &:focus {
+      outline: none;
+      background-color: rgba(142, 142, 152, 0.3);
+    }
+
+    &_header {
+      @media only screen and (max-width: 1439px) {
+        flex-grow: 1;
+      }
+    }
+  }
+
+  &__button {
+    width: 221px;
+    height: 50px;
+    background-color: $grey;
+    @include base-font(14px, 400, 1.71);
+    color: $white;
+    letter-spacing: 0.375px;
+    border: 0;
+    border-radius: 0 8px 8px 0;
+    padding: 0;
+    cursor: pointer;
+
+    @media only screen and (max-width: 767px) {
+      width: 51px;
+      min-width: 51px;
+    }
+  }
+
+  &__label {
+    display: block;
+    @include base-font(12px, 400, 1.5);
+    color: $grey;
+    margin-block-start: 12px;
+    margin-inline-start: 10px;
+
+    @media only screen and (max-width: 767px) {
+      margin-inline-start: 0;
+    }
+  }
+
+  &__button-text {
+    
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.leica {
+  padding: 60px 30px 40px;
+
+  @media only screen and (max-width: 1439px) {
+    padding: 20px 60px 60px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    padding: 20px 20px;
+  }
+
+  &__row {
+    display: flex;
+    flex-flow: row;
+    margin-block-end: 20px;
+
+    @media only screen and (max-width: 767px) {
+      flex-flow: column;
+    }
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  &__block {
+    width: 100%;
+    border-radius: 10px;
+
+    @media only screen and (max-width: 767px) {
+      max-width: 100%;
+      min-width: 100%;
+      border-radius: 4px;
+    }
+
+    &_yellow {
+      max-height: 230px;
+      max-width: 912px;
+      min-width: 180px;
+      background-color: $yellow;
+      margin-inline-start: 20px;
+
+      @media only screen and (max-width: 767px) {
+        max-width: 100%;
+        min-height: 67px;
+        margin-inline-start: 0px;
+        margin-block-start: 20px;
+      }
+    }
+
+    &_green {
+      max-height: 552px;
+      min-height: 344px;
+      max-width: 630px;
+      min-width: 173px;
+      background-color: $green;
+      margin-inline-end: 20px;
+
+      @media only screen and (max-width: 767px) {
+        max-width: 100%;
+        max-height: 124px;
+        min-height: 124px;
+        margin-inline-end: 0;
+        margin-block-end: 20px;
+      }
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    &_small {
+      max-width: 448px;
+
+      @media only screen and (max-width: 767px) {
+        max-width: 100%;
+      }
+    }
+
+    &_big {
+      max-width: 730px;
+      min-width: 455px;
+
+      @media only screen and (max-width: 767px) {
+        max-width: 100%;
+        min-width: 100%;
+      }
+    }
+  }
+}

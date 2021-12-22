@@ -1,0 +1,19 @@
+@mixin base-font ($font-size, $font-weight, $line-height) {
+  font-family: $base-font-family;
+  font-style: normal;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin section-paddings {
+  padding: 60px 160px;
+
+  @media only screen and (max-width: 1439px) {
+    padding: 60px 60px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    padding: 40px 20px 30px;
+  }
+}
