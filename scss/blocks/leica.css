@@ -1,0 +1,16 @@
+.leica {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 60px 30px;
+}
+.leica__block {
+  width: 100%;
+}
+.leica__block_yellow {
+  height: 230px;
+}
+.leica__block_green {
+  height: 552px;
+}
+
+/*# sourceMappingURL=leica.css.map */

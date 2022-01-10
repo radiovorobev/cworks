@@ -1,0 +1,34 @@
+.logo {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__name {
+    @include base-font(22px, 400, 1.36);
+    color: $white;
+
+    @media only screen and (max-width: 767px) {
+      @include base-font(20px, 400, 1.4);
+    }
+  }
+
+  &__label {
+    @include base-font(12px, 400, 1);
+    color: $black;
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: $green;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-inline-start: 20px;
+  }
+
+  &_footer {
+    margin-block-end: 84px;
+
+    @media only screen and (max-width: 767px) {
+      margin-block-end: 184px;
+    }
+  }
+}

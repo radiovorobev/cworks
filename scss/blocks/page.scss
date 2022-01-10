@@ -1,0 +1,67 @@
+.page {
+  background-color: $black;
+
+  &__section {
+    margin: 0 auto;
+    max-width: 1440px;
+    @include section-paddings;
+    box-sizing: border-box;
+  }
+
+  &__section-title {
+    @include base-font (32px, 400, 1.25);
+    color: $white;
+    margin: 0;
+
+    @media only screen and (max-width: 1439px) {
+      @include base-font (20px, 400, 1.5);
+    }
+    @media only screen and (max-width: 767px) {
+      @include base-font(12px, 400, 1.5);
+    }
+
+  }
+
+  &__section-text {
+    @include base-font (32px, 400, 1.25);
+    color: $light-grey;
+    margin: 0;
+    margin-block-end: 60px;
+
+    @media only screen and (max-width: 1439px) {
+      @include base-font (20px, 400, 1.5);
+    }
+
+    @media only screen and (max-width: 767px) {
+      @include base-font(12px, 400, 1.5);
+      margin-block-end: 20px;
+    }
+  }
+
+  &__link {
+    display: block;
+    box-sizing: border-box;
+    @include base-font(14px, 400, 1.71);
+    color: $white;
+    padding: 13px 30px;
+    width: 100%;
+    max-width: 306px;
+    background-color: $grey;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &_support {
+      margin: 90px 0 50px;
+
+      @media only screen and (max-width: 1439px) {
+        margin: 80px 0 40px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        margin: 50px 0 30px;
+        @include base-font(12px, 400, 1.5);
+        letter-spacing: 0.375px;
+      }
+    }
+  }
+}
