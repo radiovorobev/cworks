@@ -73,4 +73,12 @@
       display: none;
     }
   }
+
+  &__button-text-icon-disabled {
+    display: none;
+
+    @media only screen and (max-width: 767px) {
+      display: inline;
+    }
+  }
 }

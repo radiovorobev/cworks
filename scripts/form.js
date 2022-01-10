@@ -18,14 +18,13 @@ formFooter.addEventListener(('submit'), function(evt) {
 });
 
 function formSubmit (input, button, form) {
+	const buttonText = button.querySelector('.form__button-text');
+	const buttonIcon = button.querySelector('.form__button-text-icon');
 	if (input.value) {
-		if (document.documentElement.clientWidth < 767) {
-			button.textContent = '👍';
+			buttonIcon.textContent = '👍';
+			buttonText.textContent = 'Круто, спасибо за доверие!';
+			buttonIcon.classList.add('form__button-text-icon-disabled');
 			form.reset();
-		} else {
-			button.textContent = 'Круто, спасибо за доверие!';
-			form.reset();
-		}
 	} else {
 		input.value = 'Забыли написать свой e-mail!';
 	}

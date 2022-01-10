@@ -166,7 +166,7 @@
     margin: 60px 0 260px;
   }
 }
-.header__title_small {
+.header__title-small {
   display: block;
   font-family: Roboto, Arial, sans-serif;
   font-style: normal;
@@ -176,7 +176,7 @@
   margin-block-start: 20px;
 }
 @media only screen and (max-width: 1439px) {
-  .header__title_small {
+  .header__title-small {
     font-family: Roboto, Arial, sans-serif;
     font-style: normal;
     font-size: 50px;
@@ -186,7 +186,7 @@
   }
 }
 @media only screen and (max-width: 767px) {
-  .header__title_small {
+  .header__title-small {
     font-family: Roboto, Arial, sans-serif;
     font-style: normal;
     font-size: 30px;
@@ -321,6 +321,14 @@
 @media only screen and (max-width: 767px) {
   .form__button-text {
     display: none;
+  }
+}
+.form__button-text-icon-disabled {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .form__button-text-icon-disabled {
+    display: inline;
   }
 }
 
